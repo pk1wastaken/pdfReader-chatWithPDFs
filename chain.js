@@ -7,8 +7,8 @@ import express from "express";
 
 async function runQA(query) {
     // Create the models and chain
-    const embeddings = new OpenAIEmbeddings({ openAIApiKey: "YOUR_OPENAI_API_KEY" });
-    const model = new OpenAI({ openAIApiKey: "YOUR_OPENAI_API_KEY" });
+    const embeddings = new OpenAIEmbeddings({ openAIApiKey: "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" });
+    const model = new OpenAI({ openAIApiKey: "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" });
     const chain = loadQARefineChain(model);
 
     // Load the documents and create the vector store
